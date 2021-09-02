@@ -1,0 +1,9 @@
+icecast2:
+  image: icecast2_ices_mp3:develop
+  container_name: icecast2_ices
+  restart: always
+  ports:
+    - 8000:8000
+  volumes:
+    # folder music
+    - /home/yudzhyn/Documents/RadioServer/music:/music/
